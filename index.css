@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid;
+ /* margin: 20px 5px 5px 5px;*/
+  background-color: blue;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: white;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+h1 {
+  text-align: center;
+}
+.title{
+  display: inline;
+  /*justify-content: left;*/
+  border: 1px solid black;
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+}
+
+/* On screens that are 992px wide or more, go from tree columns */
+@media screen and (min-width: 992px) {
+  .column {
+    width: 30%;
+  }
+}
+
+/* On screens that are 991px wide or less, it will show 2 columns in fast orw and one in secound row */
+@media screen and (max-width: 991px) {
+  .column {
+    width: 40%;
+  }
+  #third-column{
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 90%;
+  }
+   #third-column{
+    width: 90%;
+  }
+
+}
